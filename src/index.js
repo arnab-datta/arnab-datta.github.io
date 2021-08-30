@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
+  // two types of router  BrowserRouter and  HashRouter
+  
+  // <BrowserRouter>
+  // <App />
+  // </BrowserRouter>,
+  <App />,
   document.getElementById('root')
 );
 
