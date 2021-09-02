@@ -1,4 +1,28 @@
-.test {
- width: 100vw;
- height: 100vh;
+@import "../../styles/globalstyles.css";
+@import "../../styles/colors.css";
+
+.profilePageWrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--black1);
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.profileSectionPar {
+  height: calc(100vh - 60px);
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileSection{
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    height: 70%;
 }

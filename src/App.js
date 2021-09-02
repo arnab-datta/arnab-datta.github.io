@@ -19,16 +19,16 @@ import {
 function App() {
   return (
     // <div className="App">
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/Skills" component={Skills} />
-          <Route exact path="/Profiles" component={Profiles} />
-          <Route exact path="/Projects" component={Projects} />
-          <Route exact path="/Artist" component={Artist} />
-          <Redirect to="/404" />
-        </Switch>
-      </Router>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/Skills" component={Skills} />
+        <Route exact path="/Profiles" component={Profiles} />
+        <Route exact path="/Projects" component={Projects} />
+        <Route exact path="/Artist" component={Artist} />
+        <Redirect to="/404" />
+      </Switch>
+    </Router>
     // </div>
   );
 }

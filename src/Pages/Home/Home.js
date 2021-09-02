@@ -1,9 +1,11 @@
 import "./Home.css";
 import arnab from "../../assets/images/arnab.jpg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Slide from 'react-reveal/Slide';
 
 function Home() {
   return (
+      <Slide left>
     <div className="HomePageWrap">
       <div className="HomePage center-flex-class">
         <div className="profileDescDiv">
@@ -30,7 +32,7 @@ function Home() {
                     <span className="col5">|</span> Contribute
                   </div>
                   <div className="btnAboutMeParent">
-                  <button className="slide">About Me »</button>
+                    <button className="slide">About Me »</button>
                   </div>
                 </div>
               </div>
@@ -108,6 +110,7 @@ function Home() {
         </div>
       </div>
     </div>
+      </Slide>
   );
 }
 

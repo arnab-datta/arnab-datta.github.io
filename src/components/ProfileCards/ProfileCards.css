@@ -1,0 +1,33 @@
+@import "../../styles/globalstyles.css";
+@import "../../styles/colors.css";
+
+.cardPro{
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+
+.icon {
+
+   height: 5rem;
+    width: 5rem;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+    -webkit-animation: 1.4s ease-in-out .4s both fade;
+    animation: 1.4s ease-in-out .4s both fade;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.img > img {
+    width: 100%;
+    height: 100%;
+}
