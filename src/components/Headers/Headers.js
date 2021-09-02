@@ -12,7 +12,7 @@ function Headers(props) {
       </Link>
       <h1 className={`h1c ${props.colorName}`}>
         <span className="h1cT">
-          <u>{props.headerName}</u>
+          {props.headerName}
         </span>
       </h1>
       </div>

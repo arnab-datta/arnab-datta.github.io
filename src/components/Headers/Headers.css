@@ -11,10 +11,7 @@
   height: 100px;
 }
 
-.HeadersIn{
 
-
-}
 .backIcon {
   width: 3.5rem;
   display: inline-block;
@@ -31,10 +28,11 @@
 }
 
 .h1c {
-    font: bold;
+    font-weight: bold;
     width: 100%;
     text-align: center;
-    margin: 3.2rem 5rem;
+    margin: 3.2rem 0rem;
+    color: white;
 }
 .cpf{
     color: var(--green1);
