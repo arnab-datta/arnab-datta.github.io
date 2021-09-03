@@ -1,5 +1,5 @@
 .headingProfile {
-  height: 60px;
+  /* height: 60px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +8,8 @@
   z-index: 8;
   /* transform: translate3d(0px, 0px, 0px); */
   border-radius: 0 0 50% 50%;
+  /* border-radius: 0% 0% 150% 150%/0% 0% 25% 25%; */
+  /* height: 35vh; */
   height: 100px;
 }
 

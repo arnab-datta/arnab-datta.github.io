@@ -1,5 +1,10 @@
 import "./CardGlobal.css";
+import { useEffect, useState } from "react";
+import js from '../../assets/icon/js.svg';
+
 function CardGlobal(props) {
+
+
   return (
     <div>
       <div className="cardParStyle">
@@ -7,24 +12,36 @@ function CardGlobal(props) {
         <section className="cardup cardupbg">
             <img
               className="cardupimg cardupimgbdr"
-              src="https://source.unsplash.com/60x60/?profile,girl"
+              src={js}
               alt="Profile Picture"
             />
-            <h2 className="carduppname">Jenny Smith</h2>
+            <h2 className="carduppname">{props.obj.skillsHeading}</h2>
           </section>
           <article className="cardbody">
-            <p className="cardtext">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat,
-              aut ipsa nemo amet earum nihil quasi impedit ea perspiciatis omnis
-              ullam dignissimos voluptas hic, vero molestiae iure fugiat? Quae,
-              voluptatibus?
-            </p>
+            <div className="cardtext">
+              <ul>
+              { 
+                props.objArr.map((str_val,index) =>  { 
+                  if(typeof str_val === "object" )
+                    return <Block key={index} h={str_val.h} v={str_val.v}></Block>;
+                  return <li key={index}>{str_val}</li> 
+                })
+              }
+              </ul>
+            </div>
           </article>
           
-          {/* {props.obj.id} */}
         </div>
       </div>
     </div>
   );
 }
 export default CardGlobal;
+
+function Block(props){
+  return (<li>
+    <b>{props.h} - </b>
+    <span>{props.v}</span>
+  </li>);
+}
+

@@ -1,10 +1,12 @@
 .cardParStyle{
+    width: 20rem;
     max-width: 20rem;
     border-radius: 3rem;
     overflow: hidden;
     box-shadow: 0 0 20px 10px #d9d9d9;
-    /* font-size: 2rem; */
     margin: 2rem;
+    height: 30rem;
+    /* font-size: 2rem; */
     /* transform-style: preserve-3d;
     transition: transform 0.75s; */
     /* transform: rotate(-5deg); */
@@ -26,9 +28,14 @@
 } */
 
 .cardtext {
-    max-width: 50ch;
-    margin: 0;
+    /* max-width: 50ch;
+    margin: 0;*/
     padding: 3rem;
+    margin: 0;
+    /* padding: 3rem 0rem 3rem 2rem; */
+    height: 200px;
+    font-size: 1.5rem;
+    height: auto;
   }
 
 /* .cardParStyle:hover {
