@@ -1,19 +1,19 @@
-import React, { Component, useState } from "react";
-import { Fade, Slide } from "react-reveal";
-import Headers from "../../components/Headers/Headers.js";
+import React from "react";
+import { Fade } from "react-reveal";
 import CardGlobal from "../../components/CardGlobal/CardGlobal.js";
+import HeadersComponent from "../../components/Headers/Headers.js";
 import "./Skills.css";
 
 function Skills() {
   return (
     <Fade right>
       <div className="SkillsWraper">
-        <Headers
+        <HeadersComponent
           headerName={"SKILLSET & WORK DOMAIN"}
           colorName={"Swd"}
           bcg={"swdbcg"}
           onback="/"
-        ></Headers>
+        ></HeadersComponent>
         <div className="CardGlobalWrapper">
           {skillsArray.map((el) => {
             return (
@@ -47,10 +47,10 @@ const skillsArray = [
         h: "Database",
         v: "MySQL",
       },
-      { 
-        h: "API Middleware", 
-        v: "Node.js & Express.js" 
-      }
+      {
+        h: "API Middleware",
+        v: "Node.js & Express.js",
+      },
     ],
   },
   { id: 4, skillsHeading: "Tools", dataArr: ["Git", "Postman"] },

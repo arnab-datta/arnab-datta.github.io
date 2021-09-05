@@ -9,21 +9,20 @@ import stackoverflow from "../../assets/icon/stackoverflow.svg";
 import email from "../../assets/icon/email.svg";
 
 import ProfileCards from "../../components/ProfileCards/ProfileCards.js";
-import Headers from "../../components/Headers/Headers.js";
+import HeadersComponent from "../../components/Headers/Headers.js";
 
 import { Fade, Slide } from "react-reveal";
 
 function Profiles() {
-  
   return (
     <Slide right>
       <div className="profilePageWrap">
-        <Headers
+        <HeadersComponent
           headerName={"CONTACT & PROFILES"}
           // colorName={"cpf"}
           bcg={"swdbcg"}
           onback="/"
-        ></Headers>
+        ></HeadersComponent>
         <div className="profileSectionPar">
           <div className="profileSection">
             {profilesArr.map((el) => {
@@ -37,7 +36,6 @@ function Profiles() {
 }
 
 export default Profiles;
-
 
 const profilesArr = [
   {
