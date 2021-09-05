@@ -1,20 +1,15 @@
-import "./App.css";
-import Home from "./Pages/Home/Home";
-import Skills from "./Pages/Skills/Skills";
-import Profiles from "./Pages//Profiles/Profiles";
-import Projects from "./Pages/Projects/Projects";
-import Artist from "./Pages/Artist/Artist";
-import NotFoundPage from "./Pages/404/404";
-
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  browserHistory,
-  IndexRoute,
   Redirect,
+  Route,
+  Switch,
 } from "react-router-dom";
+import "./App.css";
+import Profiles from "./Pages//Profiles/Profiles";
+import Artist from "./Pages/Artist/Artist";
+import Home from "./Pages/Home/Home";
+import Projects from "./Pages/Projects/Projects";
+import Skills from "./Pages/Skills/Skills";
 
 function App() {
   return (

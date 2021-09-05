@@ -1,6 +1,15 @@
-.CardGlobalWrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.SkillsWraper {
+  width: 100vw;
+  height: 100vh;
+  background: #13111e;
+}
+.CardGlobalWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 150px;
+  overflow: auto;
+  height: calc(100vh - 150px);
 }

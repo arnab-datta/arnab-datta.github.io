@@ -7,7 +7,7 @@ function HeadersComponent(props) {
       <div className="HeadersIn">
         <Link to={props.onback}>
           <div className="backIcon center-flex-class">
-            <img src={back}></img>
+            <img src={back} alt="back" />
           </div>
         </Link>
         <h1 className={`h1c ${props.colorName}`}>

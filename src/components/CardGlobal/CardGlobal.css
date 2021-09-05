@@ -1,17 +1,14 @@
-.cardParStyle{
-    width: 20rem;
-    max-width: 20rem;
-    border-radius: 3rem;
-    overflow: hidden;
-    box-shadow: 0 0 20px 10px #d9d9d9;
-    margin: 2rem;
-    height: 30rem;
-    /* font-size: 2rem; */
-    /* transform-style: preserve-3d;
-    transition: transform 0.75s; */
-    /* transform: rotate(-5deg); */
-    /* transition: transform 0.2s ease-out; */
-    
+@import "../../styles/globalstyles.css";
+@import "../../styles/colors.css";
+
+.cardParStyle {
+  width: 20rem;
+  max-width: 20rem;
+  border-radius: 3rem;
+  overflow: hidden;
+  /* box-shadow: 0 0 20px 10px #d9d9d9; */
+  margin: 2rem;
+  /* height: 30rem; */
 }
 /* .cardInStyle{
    height: 100%;
@@ -27,62 +24,77 @@
      border-radius: 3rem;
 } */
 
+.cardbody {
+  height: 26rem;
+  background: #1b1a2c;
+  overflow: auto;
+}
 .cardtext {
-    /* max-width: 50ch;
-    margin: 0;*/
-    padding: 3rem;
-    margin: 0;
-    /* padding: 3rem 0rem 3rem 2rem; */
-    height: 200px;
-    font-size: 1.5rem;
-    height: auto;
-  }
-
-/* .cardParStyle:hover {
-    transform: rotate(0);
-  } */
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  padding: 3rem;
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .cardup {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .cardupbg {
-    background: rgb(92, 191, 187);
-    background: linear-gradient(to right, #5cbfbb, #74d690);
-  }
-  .cardupimg {
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    margin: 0 2rem;
-    transition: transform 0.2s ease-out;
-    object-fit: cover;
-  }
-  .cardupimgbdr {
-    border: 5px solid white;
-  }
-  .card:hover .cardupimg {
-    transform: scale(1.15);
-  }
-  .carduppname {
-    color: white;
-  }
-  
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cardupbg {
+  background: #59db9c;
+  /* background: linear-gradient(to right, #5cbfbb, #74d690); */
+}
+.cardupimg {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin: 0 2rem;
+  transition: transform 0.2s ease-out;
+  object-fit: cover;
+}
+.cardupimgbdr {
+  border: 5px solid white;
+}
+.card:hover .cardupimg {
+  transform: scale(1.15);
+}
+.carduppname {
+  color: white;
+}
 
-/* 
-  .cardParStyle:hover {
-    transform: rotate3d(1, 1, 0, 180deg);
-  } */
+.unorderedlistclass {
+  list-style-type: none !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.listClass {
+  width: 100%;
+  height: auto;
+  margin: 20px 0px;
+  display: flex;
+}
+.listimg {
+  width: 40px;
+  border-bottom-left-radius: 25px;
+  height: auto;
+  display: flex;
+}
+.listtxt {
+  width: calc(100% - 40px);
+  height: auto;
+  text-align: center;
+  padding: 15px;
+  border-top-right-radius: 25px;
+}
+
+.listimg {
+  background: var(--dualbox_c1);
+  border: 1px solid var(--dualbox_c1);
+}
+
+.listtxt {
+  color: var(--dualbox_c1);
+  background: var(--dualbox_c3);
+  border: 1px solid var(--dualbox_c1);
+}

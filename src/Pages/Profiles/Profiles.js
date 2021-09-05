@@ -1,17 +1,14 @@
-import "./Profiles.css";
-
+import { Slide } from "react-reveal";
+import email from "../../assets/icon/email.svg";
 import facebook from "../../assets/icon/facebook.svg";
-import instagram from "../../assets/icon/instagram.svg";
-import twitter from "../../assets/icon/twitter.svg";
 import github from "../../assets/icon/github.svg";
+import instagram from "../../assets/icon/instagram.svg";
 import linkedin from "../../assets/icon/linkedin.svg";
 import stackoverflow from "../../assets/icon/stackoverflow.svg";
-import email from "../../assets/icon/email.svg";
-
-import ProfileCards from "../../components/ProfileCards/ProfileCards.js";
+import twitter from "../../assets/icon/twitter.svg";
 import HeadersComponent from "../../components/Headers/Headers.js";
-
-import { Fade, Slide } from "react-reveal";
+import ProfileCards from "../../components/ProfileCards/ProfileCards.js";
+import "./Profiles.css";
 
 function Profiles() {
   return (
