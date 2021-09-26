@@ -1,5 +1,5 @@
 import { Slide } from "react-reveal";
-import email from "../../assets/icon/email.svg";
+import email from "../../assets/icon/email.png";
 import facebook from "../../assets/icon/facebook.svg";
 import github from "../../assets/icon/github.svg";
 import instagram from "../../assets/icon/instagram.svg";
@@ -23,7 +23,17 @@ function Profiles() {
         <div className="profileSectionPar">
           <div className="profileSection">
             {profilesArr.map((el) => {
-              return <ProfileCards key={el.id} obj={el}></ProfileCards>;
+              return (
+                <ProfileCards
+                  key={el.id}
+                  obj={el}
+                  hgt={"150px"}
+                  wdt={"150px"}
+                  pdg={"20px"}
+                  bds={"12px"}
+                  mrgn={"15px"}
+                ></ProfileCards>
+              );
             })}
           </div>
         </div>
@@ -62,7 +72,7 @@ const profilesArr = [
     name: "Email",
     link: "mailto:dattaarnab2013@gmail.com",
     iconlink: email,
-    color: "#0171b3",
+    color: "linear-gradient(45deg, #d5135a, #f05924)",
   },
   {
     id: "fb",

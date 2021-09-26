@@ -1,6 +1,10 @@
 @import "styles/globalstyles.css";
 @import "styles/colors.css";
 
+*:focus {
+  outline: none !important;
+}
+
 /**** ------------------------- scrollbar -----------------***/
 
 /* width */
@@ -41,4 +45,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+a,
+a:hover {
+  text-decoration: none;
 }

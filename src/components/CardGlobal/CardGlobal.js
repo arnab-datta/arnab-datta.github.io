@@ -1,4 +1,3 @@
-import js from "../../assets/icon/js.svg";
 import "./CardGlobal.css";
 
 function CardGlobal(props) {
@@ -38,14 +37,14 @@ function CardGlobal(props) {
 }
 export default CardGlobal;
 
-function Block(props) {
-  return (
-    <li className="listClass">
-      <span className="listimg"></span>
-      <span className="listtxt">
-        <b>{props.h} - </b>
-        <span>{props.v}</span>
-      </span>
-    </li>
-  );
-}
+// function Block(props) {
+//   return (
+//     <li className="listClass">
+//       <span className="listimg"></span>
+//       <span className="listtxt">
+//         <b>{props.h} - </b>
+//         <span>{props.v}</span>
+//       </span>
+//     </li>
+//   );
+// }
