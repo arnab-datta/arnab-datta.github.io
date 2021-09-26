@@ -22,7 +22,7 @@
 
 .profileSection {
   display: flex;
-  width: 70%;
+  width: 1024px;
   flex-wrap: wrap;
   height: 70%;
 }

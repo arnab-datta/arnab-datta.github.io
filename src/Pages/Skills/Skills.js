@@ -15,11 +15,17 @@ function Skills() {
           onback="/"
         ></HeadersComponent>
         <div className="CardGlobalWrapper">
-          {skillsArray.map((el) => {
-            return (
-              <CardGlobal key={el.id} obj={el} objArr={el.dataArr}></CardGlobal>
-            );
-          })}
+          <div className="CardGlobalWrapperIn">
+            {skillsArray.map((el) => {
+              return (
+                <CardGlobal
+                  key={el.id}
+                  obj={el}
+                  objArr={el.dataArr}
+                ></CardGlobal>
+              );
+            })}
+          </div>
         </div>
       </div>
     </Fade>

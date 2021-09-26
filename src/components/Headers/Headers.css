@@ -2,10 +2,10 @@
   /* height: 60px; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   position: fixed;
   width: 100%;
-  padding: 16px 0px;
+  /* padding: 16px 0px; */
   z-index: 8;
   /* transform: translate3d(0px, 0px, 0px); */
   border-radius: 0 0 50% 50%;
@@ -14,10 +14,14 @@
   height: 100px;
 }
 
+.headingProfileWrapper {
+  width: 1024px;
+  position: relative;
+}
 .backIcon {
   width: 3.5rem;
   display: inline-block;
-  margin: 1.2rem 5rem;
+  margin: 1.2rem 5rem 1.2rem 0;
   cursor: pointer;
   position: absolute;
   top: 0;

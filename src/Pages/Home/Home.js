@@ -1,6 +1,10 @@
 import Slide from "react-reveal/Slide";
 import { Link } from "react-router-dom";
 import arnab from "../../assets/images/arnab.jpg";
+import Mobile_application from "../../assets/images/Mobile_application.svg";
+import developer_activity from "../../assets/images/developer_activity.svg";
+import solution_mindset from "../../assets/images/solution_mindset.svg";
+
 import "./Home.css";
 
 function Home() {
@@ -34,6 +38,13 @@ function Home() {
                     <div className="btnAboutMeParent">
                       <button className="slide">About Me »</button>
                     </div>
+                    {/* <div>
+                      {profilesArr.map((el) => {
+                        return (
+                          <ProfileCards key={el.id} obj={el}></ProfileCards>
+                        );
+                      })}
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -105,6 +116,16 @@ function Home() {
                     </div>
                   </div>
                 </Link>
+              </div>
+            </div>
+            <div className="developer imagesSvg center-flex-class">
+              <div className="imgPar m center-flex-class">
+                <img src={developer_activity} alt="developer" />
+              </div>
+            </div>
+            <div className="solution_mindset imagesSvg center-flex-class">
+              <div className="imgPar s center-flex-class">
+                <img src={solution_mindset} alt="solution_mindset" />
               </div>
             </div>
           </div>

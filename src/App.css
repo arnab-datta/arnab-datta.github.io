@@ -5,7 +5,8 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  display: none !important;
+  /* width: 5px; */
 }
 
 /* Track */
@@ -34,4 +35,10 @@
 
 .swal2-styled:focus {
   box-shadow: none !important;
+}
+
+.center-flex-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

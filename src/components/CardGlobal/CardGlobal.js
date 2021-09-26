@@ -4,7 +4,8 @@ import "./CardGlobal.css";
 function CardGlobal(props) {
   return (
     <div>
-      <div className="cardParStyle">
+      <div className=""></div>
+      {/* <div className="cardParStyle">
         <section className="cardup cardupbg">
           <img
             className="cardupimg cardupimgbdr"
@@ -31,7 +32,7 @@ function CardGlobal(props) {
             </ul>
           </div>
         </article>
-      </div>
+      </div> */}
     </div>
   );
 }
