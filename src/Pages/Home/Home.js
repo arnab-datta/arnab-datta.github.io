@@ -45,7 +45,22 @@ function Home() {
                 <div className="MyIntoPar center-flex-class">
                   <div className="introPar">
                     <div className="introPar__img">
-                      <img src={arnab} alt="arnab" />
+                      <div className="profile-pic-card">
+                        <div className="profile-pic-card-inner center-flex-class">
+                          <div className="profile-pic-card-front center-flex-class">
+                            <img src={arnab} alt="arnab" />
+                          </div>
+                          <div className="profile-pic-card-back  center-flex-class">
+                            <div className="introParBody">
+                              <div className="span2 sp1">⚽</div>
+                              <div className="span2 sp2">💻</div>
+                              <div className="span2 sp3">🎨</div>
+                              <div className="span2 sp4">🍔</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {/* <img src={arnab} alt="arnab" /> */}
                     </div>
                     <div className="introParHead">
                       <div className="uname">Arnab Datta</div>
