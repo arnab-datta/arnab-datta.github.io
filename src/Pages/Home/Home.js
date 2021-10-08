@@ -203,7 +203,7 @@ const profilesArr = [
   {
     id: "so",
     name: "Stack Overflow",
-    link: "https://stackoverflow.com/users/7554145/arnab-datta",
+    link: "https://stackoverflow.com/users/7554145/arnab-datta?tab=profile",
     iconlink: stackoverflow,
     color: "#ffb24a",
   },
