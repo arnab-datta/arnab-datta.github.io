@@ -48,9 +48,8 @@ a {
   height: 80%;
 }
 
-/* @media screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .cardPro {
-    width: 80px !important;
-    height: 80px !important;
+    box-shadow: none;
   }
-} */
+}
