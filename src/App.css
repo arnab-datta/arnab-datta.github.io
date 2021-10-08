@@ -1,5 +1,8 @@
 @import "styles/globalstyles.css";
 @import "styles/colors.css";
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 
 *:focus {
   outline: none !important;

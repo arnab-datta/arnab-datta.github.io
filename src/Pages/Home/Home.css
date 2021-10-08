@@ -401,6 +401,13 @@
   margin: 5px 0px;
 }
 
+.profile-card-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  /* margin-top: 40px; */
+}
 .leftSec {
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../../assets/images/developer_activity.svg);
@@ -408,7 +415,7 @@
   background-size: cover;
   position: relative; */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   width: 65%;
 }
@@ -457,7 +464,7 @@
   /* padding: 50px;
   background: var(--c7);
   border-radius: 12px; */
-  width: 75%;
+  width: 45%;
 }
 .introPar {
   /* min-height: 460px; */
@@ -480,12 +487,6 @@
   position: relative;
   z-index: 4;
   box-shadow: 0px 5px 50px 0px #6c44fc, 0px 0px 0px 7px rgba(107, 74, 255, 0.5);
-}
-@media screen and (max-width: 576px) {
-  .introPar__img {
-    width: 120px;
-    height: 120px;
-  }
 }
 
 .introPar__img img {
@@ -800,7 +801,7 @@
   display: flex;
   flex-direction: column;
   padding: 0px 20px;
-  width: 25%;
+  width: 15%;
 }
 
 .subCLs {
@@ -817,7 +818,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   .subCLs:hover {
     transform: scale(1.2);
   }
@@ -845,9 +846,6 @@
 .contactCLass {
   width: 100%;
 }
-.contactCLass h3 {
-  /* color: white; */
-}
 
 .contactCLassChild {
   margin: 20px 0px;
@@ -857,42 +855,13 @@
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1368px) {
-  .leftSec {
-  }
-
-  .middleSec {
-    left: 50vw;
-  }
-  .rightSec {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35%;
-  }
-  .introPar {
-    width: 570px !important;
-  }
-}
-
-.profile-card-ctr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* margin-top: 40px; */
-}
-@media screen and (max-width: 576px) {
-  .profile-card-ctr {
-    flex-wrap: wrap;
-  }
-}
 .profile-card__button {
   background: none;
   border: none;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   font-size: 19px;
-  margin: 10px;
+  /* margin: 10px 5px; */
   padding: 15px 40px;
   min-width: 201px;
   border-radius: 50px;
@@ -905,21 +874,10 @@
 @media screen and (max-width: 768px) {
   .profile-card__button {
     min-width: 170px;
-    margin: 15px 25px;
+    /* margin: 15px 25px; */
   }
 }
-@media screen and (max-width: 576px) {
-  .profile-card__button {
-    min-width: inherit;
-    margin: 0;
-    margin-bottom: 16px;
-    width: 100%;
-    max-width: 300px;
-  }
-  .profile-card__button:last-child {
-    margin-bottom: 0;
-  }
-}
+
 .profile-card__button:focus {
   outline: none !important;
 }
@@ -985,20 +943,12 @@
     height: auto;
   }
 }
-@media screen and (max-width: 576px) {
-  .profile-card-form {
-    padding: 20px;
-  }
-}
+
 .profile-card-form__bottom {
   justify-content: space-between;
   display: flex;
 }
-@media screen and (max-width: 576px) {
-  .profile-card-form__bottom {
-    flex-wrap: wrap;
-  }
-}
+
 .profile-card textarea {
   width: 100%;
   resize: none;
@@ -1028,4 +978,127 @@
   background: rgba(22, 33, 72, 0.35);
   border-radius: 12px;
   transition: all 0.3s;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+/* --------------- responsive -------------- */
+
+@media screen and (max-width: 1024px) {
+  .sideClass {
+    width: 20%;
+  }
+  .MyIntoPar {
+    width: 55%;
+    padding: 20px;
+  }
+  .rightSec {
+    width: 25%;
+  }
+  .profile-cards-parent {
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .HomePageWrap {
+    overflow: hidden;
+  }
+  .introParHead {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .profile-card__button {
+    min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .HomePageWrap {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: smooth;
+  }
+  .profileDescDiv {
+    flex-direction: column !important;
+    justify-content: unset !important;
+  }
+  .sideClass {
+    display: none !important;
+  }
+  .MyIntoPar {
+    padding: 100px 0px 30px 0px !important;
+    width: 100% !important;
+  }
+  .rightSec {
+    width: 100% !important;
+  }
+  .introParHead {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .profile-cards {
+    height: 150px;
+    width: 150px;
+  }
+  .profile-cards-parent {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+  }
+  .card-headings {
+    height: 65px;
+    width: 65px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .profile-card-ctr {
+    flex-wrap: wrap;
+  }
+  .introPar {
+    width: 360px;
+  }
+  .introPar__img {
+    width: 120px;
+    height: 120px;
+  }
+  .profile-card-form__bottom {
+    flex-wrap: wrap;
+  }
+  .profile-card-form {
+    padding: 20px;
+  }
+  .profile-card__button:last-child {
+    margin-bottom: 0;
+  }
+  .introParHead .span4 {
+    margin: 20px 0px;
+  }
+  .introParHead .span4 .span4-badges {
+    padding: 10px 15px;
+    margin: 5px;
+    width: 100px;
+  }
+  .introParHead .span4 .span4-badges:nth-child(1) {
+    background: transparent;
+    color: #071b2f;
+    border: 1px solid #071b2f;
+  }
+  .introParHead .span4 .span4-badges:nth-child(4) {
+    background: transparent;
+    color: #071b2f;
+    border: 1px solid #071b2f;
+  }
+  .introParHead .span4 .span4-badges:nth-child(2) {
+    background: #071b2f;
+    color: white;
+  }
+  .introParHead .span4 .span4-badges:nth-child(3) {
+    background: #071b2f;
+    color: white;
+  }
 }

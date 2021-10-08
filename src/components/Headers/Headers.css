@@ -64,3 +64,24 @@
     background-position: 0% 50%;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .headingProfile {
+    border-radius: unset;
+  }
+  .backIcon {
+    left: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 414px) {
+  .backIcon {
+    width: 2.5rem;
+    top: 12px;
+  }
+  .h1c {
+    font-size: 20px;
+  }
+}
