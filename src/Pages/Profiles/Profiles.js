@@ -27,8 +27,8 @@ function Profiles() {
                 <ProfileCards
                   key={el.id}
                   obj={el}
-                  hgt={"150px"}
-                  wdt={"150px"}
+                  hgt={"100px"}
+                  wdt={"100px"}
                   pdg={"20px"}
                   bds={"12px"}
                   mrgn={"15px"}
@@ -65,7 +65,7 @@ const profilesArr = [
     name: "Stack Overflow",
     link: "https://stackoverflow.com/users/7554145/arnab-datta?tab=profile",
     iconlink: stackoverflow,
-    color: "#ffb24a",
+    color: "#f48225",
   },
   {
     id: "em",

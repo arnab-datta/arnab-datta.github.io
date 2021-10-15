@@ -1,24 +1,21 @@
 .SkillsWraper {
   width: 100vw;
   height: 100vh;
-  /* background: #13111e; */
-  /* background: #fafafa; */
-  background: #f5f5f9;
+  /* background: #f5f5f9; */
+  background: #1f1e25;
 }
 .CardGlobalWrapper {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 150px;
+  top: 130px;
   overflow: auto;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 130px);
   width: 100%;
 }
 
 .CardGlobalWrapperIn {
-  width: 1024px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: start;
 }

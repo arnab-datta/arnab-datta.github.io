@@ -11,7 +11,7 @@
 
 .profileSectionPar {
   position: relative;
-  top: 150px;
+  top: 50px;
   overflow: auto;
   width: 100%;
   display: flex;
@@ -24,7 +24,7 @@
   display: flex;
   width: 1024px;
   flex-wrap: wrap;
-  height: 70%;
+  /* height: 70%; */
 }
 
 @media screen and (max-width: 414px) {

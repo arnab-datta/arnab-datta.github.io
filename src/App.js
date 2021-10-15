@@ -10,6 +10,7 @@ import Artist from "./Pages/Artist/Artist";
 import Home from "./Pages/Home/Home";
 import Projects from "./Pages/Projects/Projects";
 import Skills from "./Pages/Skills/Skills";
+import NotFoundPage from "./Pages/404/404";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
         <Route exact path="/Profiles" component={Profiles} />
         <Route exact path="/Projects" component={Projects} />
         <Route exact path="/Artist" component={Artist} />
-        <Redirect to="/404" />
+        <Route component={NotFoundPage} />
+        {/* <Redirect to="/404" /> */}
       </Switch>
     </Router>
     // </div>

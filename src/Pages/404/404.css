@@ -1,0 +1,45 @@
+.NotFoundPageWrap {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.pageParent {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.notFoundImage {
+  width: 100%;
+  max-width: 768px;
+  height: 290px;
+  max-width: 500px;
+}
+.notFoundImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.btnGoHome {
+  background: #fa6142;
+  border-radius: 6px;
+  outline: none !important;
+  border: none !important;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 414px) {
+  .btnGoHome {
+    font-size: 16px;
+  }
+}
