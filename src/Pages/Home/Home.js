@@ -5,19 +5,93 @@ import arnab from "../../assets/images/arnab.jpg";
 import Mobile_application from "../../assets/images/Mobile_application.svg";
 import developer_activity from "../../assets/images/developer_activity.svg";
 import solution_mindset from "../../assets/images/solution_mindset.svg";
-
 import ProfileCards from "../../components/ProfileCards/ProfileCards";
-
-import email from "../../assets/icon/email.png";
-import facebook from "../../assets/icon/facebook.svg";
-import github from "../../assets/icon/github.svg";
-import instagram from "../../assets/icon/instagram.svg";
-import linkedin from "../../assets/icon/linkedin.svg";
-import stackoverflow from "../../assets/icon/stackoverflow.svg";
-import twitter from "../../assets/icon/twitter.svg";
 import location from "../../assets/icon/location.svg";
+import STATIC_DATA from "../../STATIC_DATA/STATIC_DATA";
+import { useState, useEffect, useRef } from "react";
+import Typed from "typed.js";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 function Home() {
+  const typing_txt = useRef(null);
+  const [profilesArr, setProfilesArr] = useState([]);
+  const mySwal = withReactContent(Swal);
+
+  useEffect(() => {
+    const typed = new Typed(typing_txt.current, {
+      strings: ["Learn || Grow || Contribute ❤️"], // Strings to display
+      startDelay: 300,
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 100,
+      smartBackspace: true,
+      loop: true,
+      showCursor: false,
+      // cursorChar: "!",
+    });
+
+    // Destropying
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
+  useEffect(() => {
+    let newList = [...STATIC_DATA.profilesArr];
+    setProfilesArr(newList);
+  }, []);
+
+  const aboutMeHandler = () => {
+    const htmlPar = `<div style='text-align: justify;font-size: 16px;'>
+    <p>My name is <strong>Arnab Datta</strong>. I work as a <strong>Software Engineer</strong> by profession. I am a <strong>B.Tech</strong> graduate in <strong>Computer Science and Engineering</strong>.</p>
+    <p>I have 3 years of experience in the Software Development Field. I started my journey as a programmer during my college days.</p>
+    <p>I work as a <strong>Full Stack developer</strong> in various technologies.You can see my work domain in  <strong>Skills section</strong>.</p>
+    <p>Apart from my profession I have also an interest in sports, games and drawing.</p>
+    </div>`;
+    mySwal.fire({
+      // title: <p>Hi.</p>,
+      html: htmlPar,
+      icon: "info",
+      iconColor: "#117ad0",
+      confirmButtonColor: "#117ad0",
+      backdrop: "rgba(0, 0, 0, 0.75)",
+    });
+  };
+
+  async function contactMeHandler() {
+    const customContactMeSwal = mySwal.mixin({
+      customClass: {
+        confirmButton: "btnOrange",
+        cancelButton: "btn btn-danger",
+      },
+      buttonsStyling: false,
+    });
+
+    const { value: text } = await customContactMeSwal.fire({
+      backdrop: "rgba(0, 0, 0, 0.75)",
+      buttonsStyling: `background : linear-gradient(
+        45deg, #d5135a, #f05924);`,
+      title: "Message",
+      input: "textarea",
+      inputLabel: "Every word of you is valuable to me 😃",
+      inputPlaceholder: "Type your message here...",
+      inputAttributes: {
+        "aria-label": "Type your message here",
+      },
+      showCancelButton: true,
+    });
+
+    if (text) {
+      mySwal.fire({
+        icon: "success",
+        title: "I will catch you soon.!!!",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    }
+  }
+
   return (
     <Slide left>
       <div className="HomePageWrap">
@@ -86,14 +160,14 @@ function Home() {
                     <span className="span4-badges">Backend</span>
                     <span className="span4-badges">Mobile Apps</span>
                   </div>
-                  <div className="span5">
-                    <span className="call">Learn</span>
+                  <div className="span5" ref={typing_txt}>
+                    {/* <span className="call">Learn</span>
                     <span className="col51">|</span>
                     <span className="col5">|</span>
                     <span className="call">Grow</span>
                     <span className="col51">|</span>
                     <span className="col5">|</span>
-                    <span className="call">Contribute</span>
+                    <span className="call">Contribute</span> */}
                   </div>
                   {/* <div className="btnAboutMeParent">
                         <button className="slide">About Me »</button>
@@ -101,11 +175,11 @@ function Home() {
                   <div className="contactCLass">
                     {/* <h3>Connect me at</h3> */}
                     <div className="contactCLassChild">
-                      {profilesArr.map((el) => {
+                      {profilesArr.map((social) => {
                         return (
                           <ProfileCards
-                            key={el.id}
-                            obj={el}
+                            key={social.id}
+                            obj={social}
                             hgt={"20px"}
                             wdt={"20px"}
                             pdg={"10px"}
@@ -117,10 +191,16 @@ function Home() {
                     </div>
                   </div>
                   <div className="profile-card-ctr">
-                    <button className="profile-card__button button--blue js-message-btn">
+                    <button
+                      className="profile-card__button button--blue js-message-btn"
+                      onClick={aboutMeHandler}
+                    >
                       About
                     </button>
-                    <button className="profile-card__button button--orange">
+                    <button
+                      className="profile-card__button button--orange"
+                      onClick={contactMeHandler}
+                    >
                       Contact
                     </button>
                   </div>
@@ -183,57 +263,3 @@ function Home() {
 }
 
 export default Home;
-
-const profilesArr = [
-  {
-    id: "li",
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/datta-arnab/",
-    iconlink: linkedin,
-    color: "#007fc4",
-  },
-  {
-    id: "gh",
-    name: "GitHub",
-    link: "https://github.com/arnab-datta",
-    iconlink: github,
-    color: "#0e0e0e",
-  },
-
-  {
-    id: "so",
-    name: "Stack Overflow",
-    link: "https://stackoverflow.com/users/7554145/arnab-datta?tab=profile",
-    iconlink: stackoverflow,
-    color: "#f48225",
-  },
-  {
-    id: "em",
-    name: "Email",
-    link: "mailto:dattaarnab2013@gmail.com",
-    iconlink: email,
-    color: "linear-gradient(45deg, #d5135a, #f05924)",
-  },
-  {
-    id: "fb",
-    name: "Facebook",
-    link: "https://www.facebook.com/arnab.datta.babai/",
-    iconlink: facebook,
-    color: "#3b5a9a",
-  },
-  {
-    id: "ins",
-    name: "Instagram",
-    link: "https://www.instagram.com/urs_arnab_/",
-    iconlink: instagram,
-    color:
-      "linear-gradient(45deg, #405de6,#5851db, #833ab4, #c13584, #e1306c, #fd1d1d)",
-  },
-  {
-    id: "tw",
-    name: "Twitter",
-    link: "https://twitter.com/ArnabDatta8",
-    iconlink: twitter,
-    color: "#60a9dc",
-  },
-];

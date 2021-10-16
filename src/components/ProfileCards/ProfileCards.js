@@ -17,18 +17,11 @@ function ProfileCards(props) {
         margin: props.mrgn,
       }}
     >
-      {/* <a
-        className="img icon center-flex-class"
-        target="_blank"
-        rel="noreferrer noopener"
-        href={props.obj.link}
-      > */}
       <img
         title={props.obj.name}
         src={props.obj.iconlink}
         alt={props.obj.name}
       />
-      {/* </a> */}
     </a>
   );
 }

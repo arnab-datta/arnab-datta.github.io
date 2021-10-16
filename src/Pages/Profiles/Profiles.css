@@ -11,26 +11,35 @@
 
 .profileSectionPar {
   position: relative;
-  top: 50px;
-  overflow: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 150px);
+  top: 100px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  /* width: 100%; */
+  padding: 0 20px;
+  height: calc(100vh - 100px);
 }
 
 .profileSection {
   display: flex;
-  width: 1024px;
+  justify-content: initial;
+  align-items: center;
   flex-wrap: wrap;
-  /* height: 70%; */
+  max-width: 768px;
 }
 
 @media screen and (max-width: 414px) {
   .profileSection {
     width: 100%;
     height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .profileSectionPar {
+    display: flex;
     justify-content: center;
     align-items: center;
   }

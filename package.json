@@ -1,9 +1,10 @@
 {
-  "homepage" : "https://arnab-datta.github.io",
+  "homepage": "https://arnab-datta.github.io",
   "name": "arnab-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sweetalert2/theme-dark": "^5.0.5",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
@@ -12,11 +13,14 @@
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "sweetalert2": "^11.1.9",
+    "sweetalert2-react-content": "^4.1.1",
+    "typed.js": "^2.0.12",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
