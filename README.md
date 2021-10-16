@@ -10,7 +10,7 @@
 
 #### IPAD PRO VIEW
 
-![2](/src/assets/images/ss/portfolio_ss_ipad_pro)
+![2](/src/assets/images/ss/portfolio_ss_ipad_pro.png)
 
 #### IPAD VIEW
 
