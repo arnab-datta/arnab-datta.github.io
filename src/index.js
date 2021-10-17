@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ArnabDattaPortfolio from "./ArnabDattaPortfolio";
+import App from "./App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
@@ -13,7 +13,7 @@ ReactDOM.render(
   // <BrowserRouter>
   // <App />
   // </BrowserRouter>,
-  <ArnabDattaPortfolio />,
+  <App />,
   document.getElementById("root")
 );
 
