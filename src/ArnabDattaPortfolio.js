@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
+import "./ArnabDattaPortfolio.css";
 import Profiles from "./Pages/Profiles/Profiles";
 import Artist from "./Pages/Artist/Artist";
 import Home from "./Pages/Home/Home";
@@ -7,7 +7,7 @@ import Projects from "./Pages/Projects/Projects";
 import Skills from "./Pages/Skills/Skills";
 import NotFoundPage from "./Pages/404/404";
 
-function App() {
+function ArnabDattaPortfolio() {
   return (
     <Router>
       <Switch>
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default ArnabDattaPortfolio;

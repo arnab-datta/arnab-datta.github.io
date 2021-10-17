@@ -1,19 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import ArnabDattaPortfolio from "./ArnabDattaPortfolio";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   // <React.StrictMode>
-  //   <App />
+  //   <ArnabDattaPortfolio />
   // </React.StrictMode>,
   // two types of router  BrowserRouter and  HashRouter
 
   // <BrowserRouter>
-  // <App />
+  // <ArnabDattaPortfolio />
   // </BrowserRouter>,
-  <App />,
+  <ArnabDattaPortfolio />,
   document.getElementById("root")
 );
 

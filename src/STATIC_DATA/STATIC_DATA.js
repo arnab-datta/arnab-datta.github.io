@@ -30,13 +30,13 @@ const STATIC_DATA = {
       iconlink: stackoverflow,
       color: "#f48225",
     },
-    {
-      id: "em",
-      name: "Email",
-      link: "mailto:dattaarnab2013@gmail.com",
-      iconlink: email,
-      color: "linear-gradient(45deg, #d5135a, #f05924)",
-    },
+    // {
+    //   id: "em",
+    //   name: "Email",
+    //   link: "mailto:dattaarnab2013@gmail.com",
+    //   iconlink: email,
+    //   color: "linear-gradient(45deg, #d5135a, #f05924)",
+    // },
     {
       id: "fb",
       name: "Facebook",

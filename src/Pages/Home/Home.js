@@ -70,6 +70,7 @@ function Home() {
 
     const { value: text } = await customContactMeSwal.fire({
       backdrop: "rgba(0, 0, 0, 0.75)",
+      confirmButtonText: "Send Email",
       buttonsStyling: `background : linear-gradient(
         45deg, #d5135a, #f05924);`,
       title: "Message",
@@ -83,12 +84,19 @@ function Home() {
     });
 
     if (text) {
-      mySwal.fire({
-        icon: "success",
-        title: "I will catch you soon.!!!",
-        showConfirmButton: false,
-        timer: 1500,
-      });
+      let win = window.open(
+        `mailto:dattaarnab2013@gmail.com?subject=Contact%20Arnab%20Datta&body=${text}`,
+        "width=1,height=1,left=5,top=3"
+      );
+      setTimeout(function () {
+        win.close();
+      }, 3000);
+      // mySwal.fire({
+      //   icon: "success",
+      //   title: "I will catch you soon.!!!",
+      //   showConfirmButton: false,
+      //   timer: 1500,
+      // });
     }
   }
 
