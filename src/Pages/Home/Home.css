@@ -984,6 +984,22 @@
   width: 100% !important;
 }
 
+.aboutIcon {
+  height: 75px;
+  width: 150px;
+  padding: 5px;
+}
+.no-border {
+  border: 0 !important;
+}
+.aboutImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.pAbout {
+  line-height: 1.4;
+}
 /* --------------- responsive -------------- */
 
 @media screen and (max-width: 1024px) {

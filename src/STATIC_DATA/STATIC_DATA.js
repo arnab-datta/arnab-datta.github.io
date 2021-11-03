@@ -188,6 +188,80 @@ const STATIC_DATA = {
       ],
     },
   ],
+  artsImagesArray: [
+    {
+      img_id: 1,
+      img_name: "Death Note L",
+      img_desc: "",
+      img_src:
+        "https://images.unsplash.com/photo-1635969185655-dc6a8653df0d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1618&q=80",
+    },
+    {
+      img_id: 2,
+      img_name: "Rabindranth Tagore",
+      img_desc: "",
+      img_src:
+        "https://images.unsplash.com/photo-1635969186461-555d932eeefc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=716&q=80",
+    },
+    {
+      img_id: 3,
+      img_name: "Cristiano Ronaldo",
+      img_desc: "",
+      img_src:
+        "https://images.unsplash.com/photo-1635969186533-52ac532e9e1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=698&q=80",
+    },
+
+    {
+      img_id: 4,
+      img_name: "Design 1",
+      img_desc: "",
+      img_src:
+        "https://images.unsplash.com/photo-1635969185603-a38441612759?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+    },
+
+    {
+      img_id: 5,
+      img_name: "Parrot",
+      img_desc: "",
+      img_src:
+        "https://images.unsplash.com/photo-1635969187109-2290659bc61e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80",
+    },
+    {
+      img_id: 6,
+      img_name: "Design 2",
+      img_desc: "",
+      img_src:
+        "https://images.unsplash.com/photo-1635969186981-6796c8d2a5da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=731&q=80",
+    },
+    {
+      img_id: 7,
+      img_name: "Cranes bird",
+      img_desc: "",
+      img_src:
+        "https://images.unsplash.com/photo-1635969187039-f5ce3d3034eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=999&q=80",
+    },
+    {
+      img_id: 8,
+      img_name: "Kolkata",
+      img_desc: "",
+      img_src:
+        "https://images.unsplash.com/photo-1635969187012-adc75df885b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80",
+    },
+    {
+      img_id: 9,
+      img_name: "Girl after dance",
+      img_desc: "",
+      img_src:
+        "https://images.unsplash.com/photo-1635969186943-67cdfb8d14a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1095&q=80",
+    },
+    {
+      img_id: 10,
+      img_name: "Rickshaw & Street Life",
+      img_desc: "",
+      img_src:
+        "https://images.unsplash.com/photo-1635969186933-6a6a5f357094?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1086&q=80",
+    },
+  ],
 };
 
 export default STATIC_DATA;

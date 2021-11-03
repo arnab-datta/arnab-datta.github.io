@@ -1,6 +1,16 @@
-import "./Home.css";
+// Built-in
+import { useState, useEffect, useRef } from "react";
 import Slide from "react-reveal/Slide";
+
+// External
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
+import Typed from "typed.js";
+import withReactContent from "sweetalert2-react-content";
+import "animate.css";
+
+// Internal
+import "./Home.css";
 import arnab from "../../assets/images/arnab.jpg";
 import Mobile_application from "../../assets/images/Mobile_application.svg";
 import developer_activity from "../../assets/images/developer_activity.svg";
@@ -8,10 +18,6 @@ import solution_mindset from "../../assets/images/solution_mindset.svg";
 import ProfileCards from "../../components/ProfileCards/ProfileCards";
 import location from "../../assets/icon/location.svg";
 import STATIC_DATA from "../../STATIC_DATA/STATIC_DATA";
-import { useState, useEffect, useRef } from "react";
-import Typed from "typed.js";
-import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
 
 function Home() {
   const typing_txt = useRef(null);
@@ -43,16 +49,26 @@ function Home() {
   }, []);
 
   const aboutMeHandler = () => {
-    const htmlPar = `<div style='text-align: justify;font-size: 16px;'>
-    <p>My name is <strong>Arnab Datta</strong>. I work as a <strong>Software Engineer</strong> by profession. I am a <strong>B.Tech</strong> graduate in <strong>Computer Science and Engineering</strong>.</p>
-    <p>I have 3 years of experience in the Software Development Field. I started my journey as a programmer during my college days.</p>
-    <p>I work as a <strong>Full Stack developer</strong> in various technologies.You can see my work domain in  <strong>Skills section</strong>.</p>
-    <p>Apart from my profession I have also an interest in sports, games and drawing.</p>
+    const htmlPar = `<div style='text-align: justify;font-size: 18px; text-justify: inter-word;'>
+    <p class='pAbout'>My name is <strong>Arnab Datta</strong>. I work as a <strong>Software Engineer</strong> by profession. I am a <strong>B.Tech</strong> graduate in <strong>Computer Science and Engineering</strong>.</p>
+    <p class='pAbout'>I have 3 years of experience in the Software Development Field. I started my journey as a programmer during my college days.</p>
+    <p class='pAbout'>I work as a <strong>Full Stack developer</strong> in various technologies.You can see my work domain in  <strong>Skills section</strong>.</p>
+    <p class='pAbout'>Apart from my profession I have also an interest in sports, games and drawing.</p>
     </div>`;
     mySwal.fire({
       // title: <p>Hi.</p>,
+      showClass: {
+        popup: "animate__animated animate__fadeInDown",
+      },
+      hideClass: {
+        popup: "animate__animated animate__fadeOutUp",
+      },
       html: htmlPar,
-      icon: "info",
+      // icon: "info",
+      iconHtml: `<div class='aboutIcon'><img class='aboutImg' src=${developer_activity} alt ="devp"/></div>`,
+      customClass: {
+        icon: "no-border",
+      },
       iconColor: "#117ad0",
       confirmButtonColor: "#117ad0",
       backdrop: "rgba(0, 0, 0, 0.75)",
@@ -69,6 +85,12 @@ function Home() {
     });
 
     const { value: text } = await customContactMeSwal.fire({
+      showClass: {
+        popup: "animate__animated animate__slideInLeft",
+      },
+      hideClass: {
+        popup: "animate__animated animate__slideOutRight",
+      },
       backdrop: "rgba(0, 0, 0, 0.75)",
       confirmButtonText: "Send Email",
       buttonsStyling: `background : linear-gradient(
@@ -81,6 +103,11 @@ function Home() {
         "aria-label": "Type your message here",
       },
       showCancelButton: true,
+      preConfirm: (text) => {
+        if (!text) {
+          Swal.showValidationMessage(`Please Type something to send`);
+        }
+      },
     });
 
     if (text) {
