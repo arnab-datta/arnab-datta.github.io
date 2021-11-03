@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.c03f2d7a.chunk.css",
-    "main.js": "/static/js/main.01503611.chunk.js",
-    "main.js.map": "/static/js/main.01503611.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.88b7e618.js",
-    "runtime-main.js.map": "/static/js/runtime-main.88b7e618.js.map",
-    "static/js/2.3b9dce6a.chunk.js": "/static/js/2.3b9dce6a.chunk.js",
-    "static/js/2.3b9dce6a.chunk.js.map": "/static/js/2.3b9dce6a.chunk.js.map",
-    "static/js/3.323c49f6.chunk.js": "/static/js/3.323c49f6.chunk.js",
-    "static/js/3.323c49f6.chunk.js.map": "/static/js/3.323c49f6.chunk.js.map",
+    "main.css": "/static/css/main.37e50aa8.chunk.css",
+    "main.js": "/static/js/main.ef2bc3c4.chunk.js",
+    "main.js.map": "/static/js/main.ef2bc3c4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e3a3e86f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e3a3e86f.js.map",
+    "static/css/2.a1596f27.chunk.css": "/static/css/2.a1596f27.chunk.css",
+    "static/js/2.0fa334c5.chunk.js": "/static/js/2.0fa334c5.chunk.js",
+    "static/js/2.0fa334c5.chunk.js.map": "/static/js/2.0fa334c5.chunk.js.map",
+    "static/js/3.abf9d5af.chunk.js": "/static/js/3.abf9d5af.chunk.js",
+    "static/js/3.abf9d5af.chunk.js.map": "/static/js/3.abf9d5af.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.c03f2d7a.chunk.css.map": "/static/css/main.c03f2d7a.chunk.css.map",
-    "static/js/2.3b9dce6a.chunk.js.LICENSE.txt": "/static/js/2.3b9dce6a.chunk.js.LICENSE.txt",
+    "static/css/2.a1596f27.chunk.css.map": "/static/css/2.a1596f27.chunk.css.map",
+    "static/css/main.37e50aa8.chunk.css.map": "/static/css/main.37e50aa8.chunk.css.map",
+    "static/js/2.0fa334c5.chunk.js.LICENSE.txt": "/static/js/2.0fa334c5.chunk.js.LICENSE.txt",
     "static/media/404notfound.7699e115.png": "/static/media/404notfound.7699e115.png",
     "static/media/Mobile_application.cd49e08b.svg": "/static/media/Mobile_application.cd49e08b.svg",
     "static/media/index.css": "/static/media/Roboto-Regular.a8d6ac03.ttf",
@@ -28,9 +30,10 @@
     "static/media/twitter.666c6447.svg": "/static/media/twitter.666c6447.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.88b7e618.js",
-    "static/js/2.3b9dce6a.chunk.js",
-    "static/css/main.c03f2d7a.chunk.css",
-    "static/js/main.01503611.chunk.js"
+    "static/js/runtime-main.e3a3e86f.js",
+    "static/css/2.a1596f27.chunk.css",
+    "static/js/2.0fa334c5.chunk.js",
+    "static/css/main.37e50aa8.chunk.css",
+    "static/js/main.ef2bc3c4.chunk.js"
   ]
 }
