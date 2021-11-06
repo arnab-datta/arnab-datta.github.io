@@ -1,0 +1,108 @@
+@import "../../styles/colors.css";
+
+.ProjectsPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: #f5f5f9;
+  /* background: #1f1e25; */
+  background: linear-gradient(to right, #f0edf7, #f4eaed);
+}
+.ProjectsWrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 130px;
+  overflow: auto;
+  height: calc(100vh - 130px);
+  width: 100%;
+}
+
+.ProjectsWrapperIn {
+  max-width: 1368px;
+}
+.project__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.project__card__container {
+  flex-basis: 30%;
+  padding: 1rem;
+}
+
+.project__card {
+  width: 100%;
+  min-width: 20rem;
+  min-height: 18rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-canvas-default);
+  border-color: var(--color-border-default);
+  /* border: 1px solid #30363d; */
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: transform 0.2s ease-in-out;
+  background: white;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.project__image {
+  background-color: #c05252;
+  border-radius: 10px;
+  height: 10em;
+}
+
+.project__body {
+  padding: 16px;
+}
+
+.project__title {
+  font-size: 18px;
+  font-weight: bolder;
+  margin: 10px 0px;
+}
+
+.proejct__technologies {
+  color: #b653c6;
+  background: #f2dcf5;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+  width: fit-content;
+  margin: 10px 0px;
+}
+
+.proejct__desciption {
+  color: #838383;
+  font-size: 14px;
+}
+
+/*media qyeries */
+@media (max-width: 1300px) {
+  .project__wrapper {
+    width: 90%;
+  }
+  .project__wrapper .project__card__container {
+    flex-basis: 33.3%;
+  }
+}
+@media (max-width: 970px) {
+  .project__wrapper {
+    width: 95%;
+  }
+  .project__wrapper .project__card__container {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 660px) {
+  .project__wrapper {
+    width: 90%;
+  }
+  .project__wrapper .project__card__container {
+    flex-basis: 100%;
+  }
+}

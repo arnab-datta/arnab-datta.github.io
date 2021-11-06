@@ -1,7 +1,8 @@
 .ArtistPageWrap {
   width: 100vw;
   height: 100vh;
-  background: #f5f5f9;
+  /* background: #f5f5f9; */
+  background: #1f1e25;
 }
 .ArtImagesWrapper {
   display: flex;
