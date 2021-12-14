@@ -1,5 +1,4 @@
 // Built-in
-import { useState, useEffect, useRef } from "react";
 import Slide from "react-reveal/Slide";
 
 // Internal
@@ -19,7 +18,7 @@ function Projects() {
         <div className="ProjectsWrapper">
           <div className="ProjectsWrapperIn">
             <div className="project__wrapper">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((elem) => {
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((elem) => {
                 return <ProjectCard key={Math.random()} />;
               })}
               ;

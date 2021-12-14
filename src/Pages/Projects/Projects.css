@@ -83,25 +83,16 @@
 
 /*media qyeries */
 @media (max-width: 1300px) {
-  .project__wrapper {
-    width: 90%;
-  }
   .project__wrapper .project__card__container {
     flex-basis: 33.3%;
   }
 }
 @media (max-width: 970px) {
-  .project__wrapper {
-    width: 95%;
-  }
   .project__wrapper .project__card__container {
     flex-basis: 50%;
   }
 }
 @media (max-width: 660px) {
-  .project__wrapper {
-    width: 90%;
-  }
   .project__wrapper .project__card__container {
     flex-basis: 100%;
   }

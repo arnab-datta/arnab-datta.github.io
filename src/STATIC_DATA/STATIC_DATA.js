@@ -1,4 +1,3 @@
-import email from "../assets/icon/email.png";
 import facebook from "../assets/icon/facebook.svg";
 import github from "../assets/icon/github.svg";
 import instagram from "../assets/icon/instagram.svg";

@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import "./ArnabDattaPortfolio.css";
 import Profiles from "./Pages/Profiles/Profiles";
 import Artist from "./Pages/Artist/Artist";
@@ -23,3 +24,8 @@ function ArnabDattaPortfolio() {
 }
 
 export default ArnabDattaPortfolio;
+
+
+// old - v5 <Route exact path="/" component={Home} />
+// new - v6 <Route path="/" element={<Home />} /
+// If you are using react-router-dom v6 it looks like Switch has been replaced with Routes

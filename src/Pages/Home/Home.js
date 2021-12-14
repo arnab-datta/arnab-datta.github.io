@@ -134,8 +134,37 @@ function Home() {
           <div className="profileDescDiv">
             {/* <div className="profileDescPart leftSec center-flex-class"> */}
             {/* <div className="leftSecInner"> */}
-            <div className="profileDescPart sideClass">
-              <div className="subCLs svg1">
+            <div className="profileDescPart sideClass center-flex-class">
+              <div className="leftmid">
+                <div className='aboutSection'>
+                  <h1>Hello,</h1>
+                  <h4>My Story :- </h4>
+                    <div className="user__story">
+                      <div className="story__points sc1">
+                        {/* <div className='bullets bp1'></div> */}
+                        <div className="point__txt">Software Engineer</div>
+                      </div>
+                      <div className="story__points sc2">
+                        {/* <div className='bullets bp2'></div> */}
+                        <div className="point__txt">2+ years of experience</div>
+                       
+                      </div>
+                      <div className="story__points sc3">
+                        <div className="point__txt">B.Tech graduate in Computer science and Engineeing</div>
+                        {/* <div className='bullets bp3'></div> */}
+                        
+                      </div>
+                      {/* <div className="story__points sc4">
+                       
+                        <div className="point__txt">a</div>
+                      </div> */}
+                    
+                   
+                    </div>
+                </div>
+                </div>
+              
+              {/* <div className="subCLs svg1">
                 <div className="imgPar m center-flex-class">
                   <img src={developer_activity} alt="developer" />
                 </div>
@@ -149,7 +178,7 @@ function Home() {
                 <div className="imgPar m center-flex-class">
                   <img src={Mobile_application} alt="Mobile_application" />
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="profileDescPart MyIntoPar center-flex-class">
               <div className="introPar">
