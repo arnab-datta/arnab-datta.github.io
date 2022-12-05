@@ -13,7 +13,7 @@ import "animate.css";
 import "./Home.css";
 import arnab from "../../assets/images/arnab.jpg";
 import developer_activity from "../../assets/images/developer_activity.svg";
-import solution_mindset from "../../assets/images/solution_mindset.svg";
+import ProfileCards from "../../components/ProfileCards/ProfileCards";
 import location from "../../assets/icon/location.svg";
 import STATIC_DATA from "../../STATIC_DATA/STATIC_DATA";
 
