@@ -12,10 +12,8 @@ import "animate.css";
 // Internal
 import "./Home.css";
 import arnab from "../../assets/images/arnab.jpg";
-import Mobile_application from "../../assets/images/Mobile_application.svg";
 import developer_activity from "../../assets/images/developer_activity.svg";
 import solution_mindset from "../../assets/images/solution_mindset.svg";
-import ProfileCards from "../../components/ProfileCards/ProfileCards";
 import location from "../../assets/icon/location.svg";
 import STATIC_DATA from "../../STATIC_DATA/STATIC_DATA";
 
